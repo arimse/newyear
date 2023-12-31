@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!-- This script got from frontendfreecode.com -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<style>
+     body {
+background-image: url('tuman.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+    margin: 0 auto;
+    padding: 0 auto;
+    min-height: 100%;
+}
+.gadalka{
+    margin:0 auto;
+    background-image:url('gadalka.png');
+    background-repeat: no-repeat;
+background-size: cover;
+min-height:100%;
+width: 400px;
+height:500px;
+
+}
+.gadanie{
+    display: flex;
+flex-wrap:nowrap;
+justify-content:center;
+width:80%;
+min-height:100%;
+margin: 0 auto;
+}
+.taro{
+    background-image:url('taro.png');
+    background-repeat: no-repeat;
+background-size: cover;
+min-height:100%;
+width: 100px;
+height:200px;
+   margin-top: 50px;
+   overflow:hidden; 
+}
+.taro:hover{
+    transform:scale(1.1);
+    cursor:pointer;
+}
+h1{
+    text-align:center;
+    color:white;
+}
+
+#typed{
+    color:white;
+margin-left:35%;
+    text-align:center;
+    font-size:30px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Узнай свое будущее в 2024</h1>
+    <div class="gadalka">
+        
+      </div>
+      <div id="typed-strings">
+        <span class="text">Задай вопрос...</span>
+        <span class="text">Вытяни карту...</span>
+    </div>
+    
+    <div class="text-typing">
+        <span id="typed"></span>
+    </div>
+      <div class="gadanie">
+      <div class="col-4 taro" onclick="location.href='https://arimse.github.io/index.html/'">
+
+      </div>
+      <div class="col-4 taro" onclick="location.href='https://arimse.github.io/index.html/'">
+
+      </div>
+      <div class="col-4 taro" onclick="location.href='https://arimse.github.io/index.html/'">
+
+      </div>
+      
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+<script>
+    let typed = new Typed('#typed', { 
+    stringsElement: '#typed-strings', 
+    typeSpeed: 100, 
+    startDelay: 500, 
+    backSpeed: 50, 
+    loop: true 
+});
+$(".element").typed({
+    typeSpeed: 0, // Скорость печати
+    backSpeed: 0, // Скорость удаления
+    startDelay: 0, // Задержка перед стартом анимации
+    backDelay: 500, // Пауза перед удалением 
+    loop: false, // Повтор (true или false)
+    loopCount: false, // Число повторов, false = бесконечно
+    showCursor: true, // Отображение курсора
+    attr: null, // Атрибут
+    callback: function(){ } // Функция вызываемая после окончания работы плагина
+});
+</script>
+</body>
